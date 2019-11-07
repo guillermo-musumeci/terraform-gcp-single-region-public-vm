@@ -1,4 +1,4 @@
-# Deploy a Google Cloud VM with Apache in a public subnet of a single region with Terraform
+# Deploy a Google Cloud VM with Apache in a public only single region with Terraform
 
 network-firewall.tf --> Configure basic firewall for the network
 
