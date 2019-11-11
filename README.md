@@ -12,9 +12,9 @@ terraform.tfvars --> Defining variables
 
 variables-auth.tf --> Application and authentication variables
 
-vm.tf --> Create a Ubuntu VM using Apache
-
 vm-output.tf --> Output of VM 
+
+vm.tf --> Create a Ubuntu VM using Apache
 
 # Notes
 
