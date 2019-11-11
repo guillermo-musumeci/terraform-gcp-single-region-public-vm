@@ -1,6 +1,6 @@
-# Deploy Google Cloud Virtual Machines in a public only single region with Terraform
+# Deploy Google Cloud Virtual Machines in a public-only single region with Terraform
 
-The script will install Apache web server on the virtual machines for testing purposes.
+The script will install Apache web server on the virtual machines.
 
 network-firewall.tf --> Configure basic firewall for the network
 
