@@ -14,7 +14,7 @@ variables-auth.tf --> Application and authentication variables
 
 vm-output.tf --> Output of VM 
 
-vm.tf --> Create a Ubuntu VM using Apache
+vm.tf --> Create a Ubuntu VM with Apache web server
 
 # Notes
 
