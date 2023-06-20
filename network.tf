@@ -5,6 +5,7 @@ resource "google_compute_network" "vpc" {
   name                    = "${var.app_name}-${var.app_environment}-vpc"
   auto_create_subnetworks = "false"
   routing_mode            = "GLOBAL"
+  project                 = var.app_project
 }
 
 # create public subnet
@@ -18,7 +19,7 @@ resource "google_compute_subnetwork" "public_subnet_1" {
 # allow internal icmp (disable for better security)
 resource "google_compute_firewall" "allow-internal" {
   name    = "${var.app_name}-${var.app_environment}-fw-allow-internal"
-  network = "${google_compute_network.vpc.name}"
+  network = google_compute_network.vpc.name
   allow {
     protocol = "icmp"
   }
